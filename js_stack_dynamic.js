@@ -7,7 +7,8 @@ const rl = readline.createInterface({
 
 rl.question("Enter Array Size: ", data =>{
     let n = data;
-    let arr = Array.from({length: n},(_,i)=>i);
+    let arr = [n];
+    for (let i = 0; i < n; i++) arr[i] = i;
     console.log("your array is: ");
     
     console.log(arr);

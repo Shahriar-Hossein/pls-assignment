@@ -1,10 +1,17 @@
-#include <iostream>
+#include "bits/stdc++.h"
+
 using namespace std;
 
+const char nl = '\n';
+
 int main() {
-    int* arr = new int[5]; // Fixed size on heap
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    for (int i = 0; i < 5; i++) cout << arr[i] << " ";
-    delete[] arr;
-    cout<< '\n';
+    ios::sync_with_stdio(false);
+    cin.tie(0); cout.tie(0);
+
+    int* fhd = new int[10]; // Fixed size on heap
+    for (int i = 0; i < 10; i++) fhd[i] = i;
+    cout<< "array elements are: ";
+    for (int i = 0; i < 10; i++) cout << fhd[i] << " ";
+    delete[] fhd;
+    cout<< nl;
 }
