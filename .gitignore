@@ -1,0 +1,10 @@
+
+# Ignore compiled C++ binary files
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
